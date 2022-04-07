@@ -1,0 +1,130 @@
+@media screen and (max-width: 780px) {
+  @font-face {
+    font-family: "shrikhandregular";
+    src: url("/medias/files/shrikhand-regular-webfont.eot");
+    src: url("/medias/files/shrikhand-regular-webfont.eot")
+        format("embedded-opentype"),
+      url("/medias/files/shrikhand-regular-webfont.woff") format("woff"),
+      url("/medias/files/shrikhand-regular-webfont.ttf") format("truetype"),
+      url("/medias/files/shrikhand-regular-webfont.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  header {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  #blockpage {
+    margin: 0px;
+    padding: 0;
+  }
+  body {
+    width: auto;
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /*Header + logo*/
+  #logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  #logo img {
+    width: 40%;
+    height: 20%;
+  }
+  #sous-logo img {
+    width: 100%;
+  }
+  #sous-logo {
+    margin-bottom: -60px;
+  }
+  #Alafrancaise {
+    background-color: #f6f6f6;
+    position: relative;
+    border-radius: 35px 35px 0 0;
+  }
+  h1 {
+    font-family: "shrikhandregular";
+  }
+  #Titre {
+    padding-left: 15px;
+    padding-top: 25px;
+  }
+  #Titre i {
+    border-width: 10px;
+    padding-left: 170px;
+  }
+  .sous-titre {
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+  }
+  .sous-titre:after {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 1px;
+    bottom: 0;
+    left: 0px;
+    border-bottom: 3px solid #99e2d0;
+  }
+  .plats {
+    padding-left: 20px;
+  }
+  .menu {
+    border: 1px solid;
+    border: none;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    width: 98%;
+    height: 60px;
+    box-shadow: 0px 1px 1px #e5e5e5;
+  }
+  .legende {
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  #bloc-btn {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    padding-top: 50px;
+  }
+  .btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px 25px 25px 25px;
+    background: linear-gradient(#ff79da, #9356dc);
+    color: white;
+    border: none;
+    font-size: 15px;
+    box-shadow: 0px 2px 7px #7a7d7f;
+  }
+  footer {
+    background-color: #353535;
+    height: 160px;
+  }
+  .logo-footer img {
+    width: 25%;
+    padding-top: 25px;
+    padding-left: 20px;
+    filter: invert(100%);
+  }
+  #bloc-footer {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  footer i {
+    color: white;
+    font-size: 13px;
+  }
+  .texte-footer {
+    color: white;
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+}
