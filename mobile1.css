@@ -16,6 +16,11 @@
     margin: 0;
     padding: 0;
   }
+  .retour{
+    position: absolute;
+    left:10px ;
+    color: black;
+  }
   #blockpage {
     margin: 0px;
     padding: 0;
@@ -42,7 +47,7 @@
   #sous-logo {
     margin-bottom: -60px;
   }
-  #Alafrancaise {
+  .Alafrancaise {
     background-color: #f6f6f6;
     position: relative;
     border-radius: 35px 35px 0 0;
@@ -54,16 +59,57 @@
     padding-left: 15px;
     padding-top: 25px;
   }
-  #Titre i {
-    border-width: 10px;
-    padding-left: 170px;
+  .icon_heart:hover i.fa-heart {
+    display: none;
   }
-  .sous-titre {
+  .icon_heart:hover i.fas.fa-heart {
+    display: block;
+  }
+  .icon_heart {
+    position: absolute;
+    cursor: pointer;
+    margin-left: 80%;
+    opacity: 0;
+    -webkit-transform-origin: bottom;
+    -ms-transform-origin: bottom;
+    transform-origin: bottom;
+    opacity: 1;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  /* animation icon_heart 3 */
+  .icon_heart_3:hover i.fa-heart {
+    display: none;
+  }
+  .icon_heart_3:hover i.fas.fa-heart {
+    display: block;
+  }
+  .icon_heart_3 {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2rem;
+    margin: 1.2rem 0 2rem 9rem;
+  }
+  
+  i.fa-heart:hover {
+    cursor: pointer;
+    border: 0 solid transparent;
+  }
+  i.fas.fa-heart {
+    display: none;
+    background: linear-gradient(to bottom, #9356dc, #ff79da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+  }
+  h3 {
     display: inline-block;
     padding-bottom: 5px;
     position: relative;
   }
-  .sous-titre:after {
+  h3:after {
     content: "";
     position: absolute;
     width: 70%;
@@ -87,6 +133,10 @@
   .legende {
     padding-top: 10px;
     padding-left: 10px;
+  }
+  .prix {
+    position: relative;
+   margin-bottom: 20px;
   }
   #bloc-btn {
     display: flex;
@@ -118,6 +168,9 @@
     padding-top: 20px;
     padding-left: 20px;
   }
+  #bloc-footer a {
+    text-decoration: none;
+  }
   footer i {
     color: white;
     font-size: 13px;
@@ -127,4 +180,36 @@
     font-size: 14px;
     line-height: 1.5em;
   }
+  #entrées{
+    animation: fadein 1.5s linear;
+    animation-name: glissement;
+    animation-delay: 0.2s;
+
+  }
+  #plat{
+    animation: fadein 2s linear;
+    animation-name: glissement;
+  animation-delay: 0.3s;
+  }
+  #dessert{
+    animation: fadein 2.5s linear;
+    animation-name: glissement;
+  animation-delay: 0.4s;
+
+  }
+  
+  @keyframes glissement {
+    from {
+      margin-left: 100%;
+      width: 100%;
+      opacity: 0;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+      opacity: 1;
+    }
+  }
+  
 }
