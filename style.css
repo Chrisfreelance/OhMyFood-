@@ -69,11 +69,6 @@ body{
   border-radius: 50%;
   background: linear-gradient(#9356DC, #FF79DA);}
 
-.loader span:nth-child(2){
-  filter: blur(5px);}
-
-.loader span:nth-child(4){
-  filter: blur(25px);}
 
 #loaderBloc img{
   position: absolute; 
